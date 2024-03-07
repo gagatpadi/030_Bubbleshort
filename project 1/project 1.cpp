@@ -1,17 +1,4 @@
-#include <iostream>
-using namespace std;
 
-int arr[20];
-int n;
-
-void input() {
-	while (true) {
-		cout << "Masukan banyaknya alasan pada array : ";
-		cin >> n;
-		if (n <= 20)
-			break;
-		else {
-			cout << "\nArray dapat mempunyai maksimal 20 elemen. \n";
 		}
 		
 	}
@@ -69,3 +56,11 @@ void display() {
 	cout << endl;
 }
 
+int main() {
+	input();   // call the input function to get user input
+	bubbleShortArray();  //call the selection sort function
+	display();  // display the sorted array
+	system("pause");
+
+	return 0;
+}
